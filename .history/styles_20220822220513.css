@@ -1,0 +1,17 @@
+.nav-bar-container{
+    display: flex;
+
+    background-color: rgb(70, 70, 49);
+    
+}
+
+.nav-logo{
+    border: 1px s;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+.nav-links{
+
+}

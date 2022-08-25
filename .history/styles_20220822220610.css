@@ -1,0 +1,21 @@
+body{
+    background-color: aquamarine;
+}
+
+.nav-bar-container{
+    display: flex;
+
+    border-radius: 10px;
+    background-color: rgb(70, 70, 49);
+    
+}
+
+.nav-logo{
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+.nav-links{
+
+}
