@@ -41,9 +41,9 @@ p{
   border-radius: 1.5%;
 }
 #right-container{
-	grid-column: 2/3;
+	grid-column: 2/3
+
   background-color: rgb(202, 255, 124);
-  text-align: center;
   height: fit-content;
   max-width: fit-content;
   margin-left: 2rem;
