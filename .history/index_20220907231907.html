@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		var images = [
+			"https://www.online-tech-tips.com/wp-content/uploads/2021/03/Hero-Anime.jpg",
+			"https://www.online-tech-tips.com/wp-content/uploads/2021/03/1-Crunchyroll.jpg",
+			"https://www.online-tech-tips.com/wp-content/uploads/2021/03/2-Funimation.jpg",
+			"https://www.online-tech-tips.com/wp-content/uploads/2021/03/3-KissAnime.jpg",
+			"https://www.online-tech-tips.com/wp-content/uploads/2021/03/4-ConTV.jpg"];
+		$(document).ready(function(){
+			//variable to keep track of which element the user is
+			//on while iterating an array of urls for images
+			var i = 0;
+			
+			//load first url image from array of image urls array
+			$('#img').attr({"src": images[i]});
+
+			//button with onclick event to iterate foward over elements
+			$('#btn-foward').on("click", function(){
+				//if statement to prevent going out of array bounds
+				if (i >= images.length - 1) return;
+				
+				//fade out first element
+				$('#img').finish().fadeTo(300, 0, function() {
+					//ready next element in array
+					$('#img').append(images[i++]).attr("src", images[i]);
+					// fade back in again
+					$('#img').finish().fadeTo(300, 1);
+				});
+			});
+			//this button and onclick event do what the above button code does
+			//but iterates over the array in reverse
+			$('#btn-backward').on("click", function(){
+				if (i <= 0) return;
+				$('#img').finish().fadeTo(300, 0, function() {
+					$('#img').finish().fadeTo(300, 1);
+					$('#img').append(images[i--]).attr("src", images[i]);
+				});
+			});
+		});
+	</script>
+    <title>Personal Page</title>
+</head>
+
+<body>
+    <div id="img-container"><img id="img" style="width: auto; height: 300px; object-fit: cover;"></img></div>
+	<button id="btn-backward">Backward</button>
+	<button id="btn-foward">Foward</button> -->
+
+
+    <!-- button to adjust layout -->
+    <!-- <button class="layout-correction" role="button" type="submit">Fix Me</button>
+    <div class="nav-bar-container">
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Welcome to FunLand</a><span> 🥳 </span></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-container">
+        
+
+
+
+
+
+
+
+        <div class="child-container-left">
+            <h1>Hi! I'm Ichigo</h1>
+            <p>
+                Currently - I am a Senior at Kennesaw State University studying for my B.S. in Information Technology with a focus on the Enterprise Track. I tweaked the courses I have taken thus far to better align with my career goal of being a Full Stack Developer. To host my site I have chosen two providers which you can access by clicking on the provider's name: <a href="https://it4403.d10bl6g1kg6r9j.amplifyapp.com/" target="_blank">AWS</a>  and <a href="https://ichig085.github.io/IT4403/">GitHub Pages</a>. If one hosting provider isn't working then we got a backup plan. 
+            </p>
+
+            <h2>Information on IT 4403:</h2>
+            <p>
+                This is an Advanced Web and Mobile Application course. This covers advanced topics on web and mobile applications with a focus on modern web application architectures and mobile friendly user interfaces. Students who choose to take this course will complete one major development project using currently trending web technologies. For a more detailed overview of this course <a href="https://facultyweb.kennesaw.edu/zli8/it4403.php#:~:text=Course%20Description,using%20the%20latest%20web%20technologies." alt="Link to Kennesaw State University IT 4403 webpage" target="_blank">click here</a> and additional information about the Department of Information Technology at Kennesaw State University can be found <a href="https://ccse.kennesaw.edu/it/">here</a>.
+            </p>
+            <h2>A bit about my page:</h2>
+            <p>
+                This webpage will evolve into something that is more useful as we continue on this journey through the semester together. And as a bonus, the hope is that this webpage can also provoke inspiration to whoever may be viewing it.
+            </p>
+            <h2>The purpose of my webpage:</h2>
+            <p>
+                One important aspect of this class is to learn through hands-on experience by completing lab assignments, which is where this webpage comes in. Throughout the semester as we take the knowledge gained from the online materials provided to us and put it into practice, this webpage will be expanded upon and utilized to track our progress as well as be used to grade our assignments.
+            </p>
+        </div>
+        <div class="main-container-right">
+            <img src="images/rainbow-circuit-art-devushka.jpg" alt="Profile Photo">
+        </div>
+    </div>
+    <!-- <script src="script.js"></script>   -->
+</body>
+</html>

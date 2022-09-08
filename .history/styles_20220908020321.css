@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(0, 195, 255);
+    margin: 25px 100px;
+    font-family: 'Comic Neue', cursive, 'sans-serif';
+    font-size: 1.5rem;
+}
+#funland{
+    color: rgb(68, 255, 146);
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    pointer-events: none;
+}
+a{
+  color: rgb(158, 54, 255);
+  text-decoration: none;
+}
+.nav-links ul li{
+    bottom: 3.25rem;
+    left: 3rem;
+    display: inline;
+    list-style-type:none;
+}
+#left-container a:hover{
+  color: azure;
+}
+.header{
+  text-align: center;
+  margin: 1rem;
+}
+p{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.main-container {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+
+}
+#left-container {
+  grid-column: 1 / 2;
+  background-color: rgb(250, 224, 61);
+  border-radius: 1.5%;
+}
+#right-container{
+	grid-column: 2/3;
+  background-color: rgb(202, 255, 124);
+  height: fit-content;
+  max-width: fit-content;
+  margin-left: 2rem;
+  border-radius: 1.5%;
+}
+#img{
+  margin-left: auto;
+  margin-right: auto;
+  width: 464px; 
+  height: 300px;  
+  object-fit: cover;
+  display: inline-block;
+  border-bottom-left-radius: 20% 20%;
+} 
+.btn{
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+#btn-container{
+  text-align: center;
+  margin-bottom: .5rem;
+}
+.profile-pic{
+  margin-left: auto;
+  margin-right: auto;
+  width: auto; 
+  height: 300px; 
+  object-fit: cover;
+  border-top-right-radius: 20% 20%;
+  border-top-left-radius: 2%;
+  border-bottom-left-radius: 2%;
+}
